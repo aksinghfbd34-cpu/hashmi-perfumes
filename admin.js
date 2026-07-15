@@ -169,17 +169,17 @@ function renderOrders() {
     const statusBadgeClass = order.status.toLowerCase();
 
     row.innerHTML = `
-      <td style="font-weight: 600; color: var(--gold-light);">${order.id}</td>
-      <td>${order.date}</td>
-      <td>${order.customer}</td>
-      <td style="max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${order.items}</td>
-      <td style="font-family: 'Cinzel', serif; font-weight: 600;">₹${order.total}</td>
-      <td>
+      <td data-label="Order ID" style="font-weight: 600; color: var(--gold-light);">${order.id}</td>
+      <td data-label="Date">${order.date}</td>
+      <td data-label="Customer">${order.customer}</td>
+      <td data-label="Items" style="max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${order.items}</td>
+      <td data-label="Total" style="font-family: 'Cinzel', serif; font-weight: 600;">₹${order.total}</td>
+      <td data-label="Status">
         <select class="status-select" data-id="${order.id}">
           ${statusOptions}
         </select>
       </td>
-      <td>
+      <td data-label="Action">
         <button class="btn-tbl-action delete delete-order-btn" data-id="${order.id}">Delete</button>
       </td>
     `;
@@ -208,21 +208,21 @@ function renderProducts() {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <td>
-        <div style="display: flex; align-items: center;">
+      <td data-label="Product">
+        <div style="display: flex; align-items: center; justify-content: flex-end;">
           <img src="${product.image}" alt="${product.name}" class="product-tbl-img">
-          <div>
+          <div style="text-align: right;">
             <span style="font-weight: 600; font-size: 0.95rem; display: block; color: var(--gold-light);">${product.name}</span>
             <span style="font-size: 0.7rem; color: var(--text-muted);">${product.specs.volume}</span>
           </div>
         </div>
       </td>
-      <td style="color: var(--gold);">${product.tag}</td>
-      <td style="font-family: 'Cinzel', serif; font-weight: 600;">₹${product.price}</td>
-      <td><span style="font-size: 0.75rem; color: var(--text-muted);">${product.notes.top}</span></td>
-      <td><span style="font-size: 0.75rem; color: var(--text-muted);">${product.notes.heart}</span></td>
-      <td><span style="font-size: 0.75rem; color: var(--text-muted);">${product.notes.base}</span></td>
-      <td>
+      <td data-label="Tagline" style="color: var(--gold);">${product.tag}</td>
+      <td data-label="Price" style="font-family: 'Cinzel', serif; font-weight: 600;">₹${product.price}</td>
+      <td data-label="Top Note"><span style="font-size: 0.75rem; color: var(--text-muted);">${product.notes.top}</span></td>
+      <td data-label="Heart Note"><span style="font-size: 0.75rem; color: var(--text-muted);">${product.notes.heart}</span></td>
+      <td data-label="Base Note"><span style="font-size: 0.75rem; color: var(--text-muted);">${product.notes.base}</span></td>
+      <td data-label="Actions">
         <button class="btn-tbl-action edit edit-product-btn" data-id="${product.id}">Edit</button>
         <button class="btn-tbl-action delete delete-product-btn" data-id="${product.id}">Delete</button>
       </td>
