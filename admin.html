@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hashmi Perfumes | Admin Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Admin Header -->
+  <header class="admin-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-container">
+        <svg class="logo-img" viewBox="0 0 160 160" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M80 15C55 15 35 32 30 55C30 57 32 60 35 60C38 60 40 57 40 55C44 37 60 25 80 25C100 25 116 37 120 55C120 57 122 60 125 60C128 60 130 57 130 55C125 32 105 15 80 15Z" fill="#c5a059"/>
+          <path d="M80 8L84 15H76L80 8Z" fill="#c5a059"/>
+          <path d="M72 50H88V53H72V50Z" fill="#c5a059"/>
+          <path d="M70 56H90L87 75H73L70 56Z" fill="#c5a059"/>
+          <path d="M68 85H92L95 125C95 130 90 135 80 135C70 135 65 130 65 125L68 85Z" fill="#c5a059"/>
+        </svg>
+        <div class="logo-text-wrapper">
+          <span class="logo-title" style="font-size: 1.1rem;">HASHMI</span>
+          <span class="logo-subtitle" style="font-size: 0.55rem;">ADMIN PANEL</span>
+        </div>
+      </a>
+      
+      <div class="admin-top-actions">
+        <a href="index.html" class="btn-outline" style="font-size: 0.75rem; padding: 0.5rem 1.2rem;">View Storefront</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-main-container">
+    <div class="max-width-wrapper">
+      
+      <!-- Welcome Title -->
+      <div style="margin-bottom: 2.5rem;">
+        <h1 class="gold-gradient-text" style="font-size: 2.2rem; margin-bottom: 0.3rem;">Boutique Dashboard</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Manage your luxury attar products and view incoming customer WhatsApp order logs.</p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="admin-stats-grid">
+        <div class="stat-card glass-panel">
+          <span class="stat-icon">💰</span>
+          <div class="stat-info">
+            <span class="stat-label">Simulated Sales</span>
+            <span class="stat-value" id="stat-total-sales">₹0</span>
+          </div>
+        </div>
+        <div class="stat-card glass-panel">
+          <span class="stat-icon">📦</span>
+          <div class="stat-info">
+            <span class="stat-label">Total Orders</span>
+            <span class="stat-value" id="stat-total-orders">0</span>
+          </div>
+        </div>
+        <div class="stat-card glass-panel">
+          <span class="stat-icon">🧪</span>
+          <div class="stat-info">
+            <span class="stat-label">Products Active</span>
+            <span class="stat-value" id="stat-product-count">0</span>
+          </div>
+        </div>
+        <div class="stat-card glass-panel">
+          <span class="stat-icon">📈</span>
+          <div class="stat-info">
+            <span class="stat-label">Pending Delivery</span>
+            <span class="stat-value" id="stat-pending-orders">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Sections Tab Controls -->
+      <div class="admin-tabs">
+        <button class="admin-tab-btn active" id="tab-orders-btn">Orders Tracking</button>
+        <button class="admin-tab-btn" id="tab-products-btn">Product Catalog</button>
+      </div>
+
+      <!-- Tab Content 1: Orders -->
+      <div class="admin-tab-content active" id="content-orders">
+        <div class="glass-panel table-panel">
+          <div class="table-header-row">
+            <h3 class="gold-text" style="font-size: 1.25rem;">WhatsApp Order Log</h3>
+            <button class="btn-outline" id="clear-orders-btn" style="font-size: 0.72rem; padding: 0.4rem 1rem;">Clear Order Logs</button>
+          </div>
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Date</th>
+                  <th>Customer Name</th>
+                  <th>Items Ordered</th>
+                  <th>Total Amount</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="orders-table-body">
+                <!-- Filled dynamically with JS -->
+                <tr>
+                  <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 3rem;">
+                    No orders recorded yet. Place an order on the storefront to test logging.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Products -->
+      <div class="admin-tab-content" id="content-products">
+        <div class="glass-panel table-panel">
+          <div class="table-header-row">
+            <h3 class="gold-text" style="font-size: 1.25rem;">Attar Perfume Catalog</h3>
+            <button class="btn-gold" id="add-product-btn" style="font-size: 0.75rem; padding: 0.5rem 1.2rem;">+ Add New Product</button>
+          </div>
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Tagline</th>
+                  <th>Price</th>
+                  <th>Top Note</th>
+                  <th>Heart Note</th>
+                  <th>Base Note</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="products-table-body">
+                <!-- Filled dynamically with JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Product Modal Form (Add & Edit) -->
+  <div class="modal-overlay" id="admin-product-modal">
+    <div class="modal-content-wrapper glass-panel modal-form-wrapper">
+      <button class="modal-close-btn" id="admin-modal-close-btn">&times;</button>
+      <div class="admin-modal-body">
+        <h3 class="gold-gradient-text" id="modal-form-title" style="font-size: 1.6rem; margin-bottom: 1.8rem; text-align: center;">Add New Attar</h3>
+        
+        <form id="product-crud-form">
+          <input type="hidden" id="form-product-id">
+          
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="form-name">Attar Name <span style="color: #ff6b6b;">*</span></label>
+              <input type="text" id="form-name" placeholder="e.g. Royal Sandalwood" required>
+            </div>
+            <div class="form-group">
+              <label for="form-price">Price (₹) <span style="color: #ff6b6b;">*</span></label>
+              <input type="number" id="form-price" placeholder="e.g. 1599" min="1" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="form-tag">Tagline / Category <span style="color: #ff6b6b;">*</span></label>
+              <input type="text" id="form-tag" placeholder="e.g. Sweet Woody Sandal" required>
+            </div>
+            <div class="form-group">
+              <label for="form-badge">Badge (Optional)</label>
+              <input type="text" id="form-badge" placeholder="e.g. New, Premium, Best Seller">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-desc">Product Description <span style="color: #ff6b6b;">*</span></label>
+            <textarea id="form-desc" rows="3" placeholder="Write a luxurious details description for this perfume oil..." required></textarea>
+          </div>
+
+          <div class="form-row-3">
+            <div class="form-group">
+              <label for="form-top-note">Top Note <span style="color: #ff6b6b;">*</span></label>
+              <input type="text" id="form-top-note" placeholder="e.g. Sandalwood Leaf" required>
+            </div>
+            <div class="form-group">
+              <label for="form-heart-note">Heart Note <span style="color: #ff6b6b;">*</span></label>
+              <input type="text" id="form-heart-note" placeholder="e.g. White Cedarwood" required>
+            </div>
+            <div class="form-group">
+              <label for="form-base-note">Base Note <span style="color: #ff6b6b;">*</span></label>
+              <input type="text" id="form-base-note" placeholder="e.g. Soft Amber & Musk" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="form-volume">Volume / Size</label>
+              <input type="text" id="form-volume" value="6ml Concentrated Oil">
+            </div>
+            <div class="form-group">
+              <label for="form-longevity">Longevity</label>
+              <input type="text" id="form-longevity" value="Up to 24 Hours on skin">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-image">Product Bottle Style (Color theme)</label>
+            <select id="form-image">
+              <option value="media/althair.png">Emerald Green Glass (Althair)</option>
+              <option value="media/royal_oud.png">Dark Amber Glass (Royal Oud)</option>
+              <option value="media/rose_shahi.png">Ruby Red Glass (Rose Shahi)</option>
+              <option value="media/majestic_musk.png">Frosted White Glass (Majestic Musk)</option>
+            </select>
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; justify-content: flex-end; gap: 1rem;">
+            <button type="button" class="btn-outline" id="form-cancel-btn">Cancel</button>
+            <button type="submit" class="btn-gold" id="form-submit-btn">Save Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-wrapper"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

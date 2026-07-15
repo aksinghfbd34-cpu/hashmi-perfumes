@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hashmi Perfumes | Luxury Traditional Indian Attars & Fragrances</title>
+  <meta name="description" content="Discover Hashmi Perfumes. A collection of the finest attars crafted from tradition, worn as luxury. Experience premium fragrances like Althair, Royal Oud, and Rose Shahi.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header id="main-header">
+    <div class="nav-container">
+      <a href="#" class="logo-container">
+        <!-- Recreated Premium Logo from Packaging as inline SVG -->
+        <svg class="logo-img" viewBox="0 0 160 160" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer Arch/Dome Shape -->
+          <path d="M80 15C55 15 35 32 30 55C30 57 32 60 35 60C38 60 40 57 40 55C44 37 60 25 80 25C100 25 116 37 120 55C120 57 122 60 125 60C128 60 130 57 130 55C125 32 105 15 80 15Z" fill="url(#gold-grad)"/>
+          <path d="M80 22C60 22 43 35 38 54C37.5 56 39 58 41 58C43 58 44 56.5 44.5 55C48.5 40 63 30 80 30C97 30 111.5 40 115.5 55C116 56.5 117 58 119 58C121 58 122.5 56 122 54C117 35 100 22 80 22Z" fill="url(#gold-grad)" opacity="0.8"/>
+          <!-- Mosque Peak -->
+          <path d="M80 8L84 15H76L80 8Z" fill="url(#gold-grad)"/>
+          <!-- Perfume Bottle Silhouette in center -->
+          <path d="M72 50H88V53H72V50Z" fill="url(#gold-grad)"/>
+          <path d="M70 56H90L87 75H73L70 56Z" fill="url(#gold-grad)"/>
+          <path d="M66 78H94V82H66V78Z" fill="url(#gold-grad)"/>
+          <!-- Bottle Body -->
+          <path d="M68 85H92L95 125C95 130 90 135 80 135C70 135 65 130 65 125L68 85Z" fill="url(#gold-grad)"/>
+          <!-- letter H details inside body -->
+          <path d="M76 95V115M84 95V115M76 105H84" stroke="url(#gold-grad)" stroke-width="2"/>
+          <!-- Bottle diamond cap -->
+          <path d="M80 35L86 46H74L80 35Z" fill="url(#gold-grad)"/>
+          <!-- Letter H arches on left and right -->
+          <path d="M25 65C25 65 15 85 15 110C15 135 27 140 27 140H32C32 140 22 135 22 110C22 85 30 70 30 70H25Z" fill="url(#gold-grad)"/>
+          <path d="M135 65C135 65 145 85 145 110C145 135 133 140 133 140H128C128 140 138 135 138 110C138 85 130 70 130 70H135Z" fill="url(#gold-grad)"/>
+          <!-- Bottom Accent Ribbon/Flourish -->
+          <path d="M40 142C60 147 100 147 120 142C110 146 50 146 40 142Z" fill="url(#gold-grad)"/>
+          <defs>
+            <linearGradient id="gold-grad" x1="0" y1="0" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#fbe599"/>
+              <stop offset="50%" stop-color="#c5a059"/>
+              <stop offset="100%" stop-color="#967233"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="logo-text-wrapper">
+          <span class="logo-title">HASHMI</span>
+          <span class="logo-subtitle">PERFUMES</span>
+        </div>
+      </a>
+      
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#scent-quiz">Scent Quiz</a></li>
+        <li><a href="#mixer">Attar Alchemist</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center;">
+        <button class="nav-cart-btn" id="cart-toggle-btn" aria-label="Shopping Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cart-badge-count">0</span>
+        </button>
+        <div class="menu-toggle" id="mobile-menu-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-deco-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-badge">Traditional Indian Artistry</span>
+        <h1 class="hero-title">Crafted From Tradition,<br><span class="gold-gradient-text">Worn As Luxury</span></h1>
+        <p class="hero-desc">Experience the finest 100% pure, alcohol-free Attars from Hashmi Perfumes. Indulge in rich, therapeutic concentrated oils designed to last all day and leave an unforgettable royal trail.</p>
+        <div class="hero-actions">
+          <a href="#collections" class="btn-gold">Explore Attars</a>
+          <a href="#scent-quiz" class="btn-outline">Find Your Scent</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-circle-back"></div>
+        <div class="hero-circle-back-2"></div>
+        <!-- Loaded Signature Althair Bottle Image -->
+        <img src="media/althair.png" alt="Hashmi Althair Premium Attar" class="hero-img" id="hero-showcase-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Collections Section -->
+  <section id="collections">
+    <div class="max-width-wrapper">
+      <div class="section-title-container">
+        <h2 class="section-title">The Royal Collection</h2>
+        <p class="section-subtitle">Exquisite 6ml Concentrated Perfume Oils</p>
+        <div class="section-ornament">
+          <span class="section-ornament-icon">◆</span>
+        </div>
+      </div>
+
+      <div class="collections-grid" id="product-list-container">
+        <!-- Products will be generated dynamically by app.js, fallback static grid for SEO -->
+        <div class="product-card glass-panel">
+          <div class="product-image-container">
+            <span class="product-badge">Best Seller</span>
+            <img src="media/althair.png" alt="Althair" class="product-card-img">
+          </div>
+          <div class="product-card-info">
+            <span class="product-card-tag">Warm Oud & Spices</span>
+            <h3 class="product-card-title">Althair</h3>
+            <p class="product-card-desc">Signature luxury attar blending warm cinnamon, royal cardamon, agarwood, and amber.</p>
+            <div class="product-card-footer">
+              <span class="product-card-price">₹1,499</span>
+              <button class="product-card-btn" aria-label="Add to Cart">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scent Quiz Section -->
+  <section class="scent-quiz-bg" id="scent-quiz">
+    <div class="max-width-wrapper">
+      <div class="section-title-container">
+        <h2 class="section-title">Scent Finder Quiz</h2>
+        <p class="section-subtitle">Discover Your Signature Fragrance</p>
+        <div class="section-ornament">
+          <span class="section-ornament-icon">◆</span>
+        </div>
+      </div>
+
+      <div class="scent-quiz-box glass-panel">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-step active" data-step="1"></div>
+          <div class="quiz-progress-step" data-step="2"></div>
+          <div class="quiz-progress-step" data-step="3"></div>
+        </div>
+
+        <div class="quiz-step-container">
+          <!-- Step 1: Vibe -->
+          <div class="quiz-step active" id="quiz-step-1">
+            <h3 class="quiz-question">Which fragrance profile appeals to you the most?</h3>
+            <div class="quiz-options">
+              <button class="quiz-option-btn" data-value="woody" data-question="1">
+                <span class="quiz-option-title">Royal & Mysterious</span>
+                <span class="quiz-option-desc">Deep woods, precious agarwood, warm spices</span>
+              </button>
+              <button class="quiz-option-btn" data-value="floral" data-question="1">
+                <span class="quiz-option-title">Fresh & Floral</span>
+                <span class="quiz-option-desc">Rose blossoms, jasmine, fresh musk base</span>
+              </button>
+              <button class="quiz-option-btn" data-value="sweet" data-question="1">
+                <span class="quiz-option-title">Sweet & Warm</span>
+                <span class="quiz-option-desc">Honey, dark vanilla, amber, smooth sandalwood</span>
+              </button>
+              <button class="quiz-option-btn" data-value="musky" data-question="1">
+                <span class="quiz-option-title">Clean & Powdery</span>
+                <span class="quiz-option-desc">White linen, soft velvet musk, light ozone</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Intensity -->
+          <div class="quiz-step" id="quiz-step-2">
+            <h3 class="quiz-question">What level of fragrance intensity do you prefer?</h3>
+            <div class="quiz-options">
+              <button class="quiz-option-btn" data-value="subtle" data-question="2">
+                <span class="quiz-option-title">Subtle & Intimate</span>
+                <span class="quiz-option-desc">Sits close to the skin, gentle and comforting</span>
+              </button>
+              <button class="quiz-option-btn" data-value="moderate" data-question="2">
+                <span class="quiz-option-title">Balanced & Classic</span>
+                <span class="quiz-option-desc">Projects elegantly, noticeable but never overwhelming</span>
+              </button>
+              <button class="quiz-option-btn" data-value="intense" data-question="2">
+                <span class="quiz-option-title">Bold & Majestic</span>
+                <span class="quiz-option-desc">Strong projection, long-lasting rich royal sillage</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Occasion -->
+          <div class="quiz-step" id="quiz-step-3">
+            <h3 class="quiz-question">What is the primary occasion for this fragrance?</h3>
+            <div class="quiz-options">
+              <button class="quiz-option-btn" data-value="daily" data-question="3">
+                <span class="quiz-option-title">Daily Wear & Devotion</span>
+                <span class="quiz-option-desc">Perfect for everyday elegance, prayers, and work</span>
+              </button>
+              <button class="quiz-option-btn" data-value="evening" data-question="3">
+                <span class="quiz-option-title">Evening Wear & Leisure</span>
+                <span class="quiz-option-desc">Perfect for dinners, late strolls, and relaxing nights</span>
+              </button>
+              <button class="quiz-option-btn" data-value="special" data-question="3">
+                <span class="quiz-option-title">Royal Celebrations</span>
+                <span class="quiz-option-desc">Perfect for weddings, festivals, and special gatherings</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-navigation-buttons">
+          <button class="btn-outline quiz-nav-btn" id="quiz-back-btn">Back</button>
+          <button class="btn-gold quiz-nav-btn" id="quiz-next-btn" disabled>Next</button>
+        </div>
+
+        <!-- Quiz Results Card -->
+        <div class="quiz-results-card" id="quiz-results-panel">
+          <h3 class="gold-gradient-text" style="font-size: 1.8rem; margin-bottom: 0.5rem;">Your Fragrance Match</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Based on your unique preferences, we recommend:</p>
+          
+          <div class="result-perfume-display">
+            <img src="" alt="Matched Perfume" class="result-perfume-img" id="result-match-img">
+            <span class="result-perfume-match-percentage" id="result-match-score">98% Match</span>
+            <h4 class="result-perfume-name" id="result-match-name">Althair</h4>
+            <p class="result-perfume-desc" id="result-match-desc">Woody Spicy oud with beautiful sweet projection.</p>
+          </div>
+
+          <div style="display: flex; justify-content: center; gap: 1rem;">
+            <button class="btn-gold" id="result-add-cart-btn">Add to Cart</button>
+            <button class="btn-outline quiz-reset-btn" id="quiz-restart-btn">Take Quiz Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fragrance Mixer Section ("Attar Alchemist") -->
+  <section id="mixer">
+    <div class="max-width-wrapper">
+      <div class="section-title-container">
+        <h2 class="section-title">The Attar Alchemist</h2>
+        <p class="section-subtitle">Layer Fragrances to Create Your Custom Signature Vibe</p>
+        <div class="section-ornament">
+          <span class="section-ornament-icon">◆</span>
+        </div>
+      </div>
+
+      <div class="mixer-grid">
+        <div class="mixer-control-panel glass-panel">
+          <h3 class="gold-text" style="font-size: 1.3rem; margin-bottom: 0.5rem;">Fragrance Layering Mixer</h3>
+          <p class="mixer-panel-desc">In Eastern perfumery, layering two premium attars is a time-honored secret. Select two fragrances below to see how their core notes will harmonize together.</p>
+          
+          <div class="mixer-selections-container">
+            <!-- First Base -->
+            <div class="mixer-slot-group">
+              <span class="mixer-slot-label">First Layer (Base Note)</span>
+              <div class="mixer-select-grid" id="mixer-slot-1-selects">
+                <button class="mixer-select-btn active" data-product="althair" data-slot="1">Althair</button>
+                <button class="mixer-select-btn" data-product="royal_oud" data-slot="1">Royal Oud</button>
+                <button class="mixer-select-btn" data-product="rose_shahi" data-slot="1">Rose Shahi</button>
+                <button class="mixer-select-btn" data-product="majestic_musk" data-slot="1">Majestic Musk</button>
+              </div>
+            </div>
+
+            <!-- Second Layer -->
+            <div class="mixer-slot-group">
+              <span class="mixer-slot-label">Second Layer (Accent Note)</span>
+              <div class="mixer-select-grid" id="mixer-slot-2-selects">
+                <button class="mixer-select-btn" data-product="althair" data-slot="2">Althair</button>
+                <button class="mixer-select-btn" data-product="royal_oud" data-slot="2">Royal Oud</button>
+                <button class="mixer-select-btn active" data-product="rose_shahi" data-slot="2">Rose Shahi</button>
+                <button class="mixer-select-btn" data-product="majestic_musk" data-slot="2">Majestic Musk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mixer-visualizer-container">
+          <div class="mixer-crucible">
+            <div class="crucible-glow"></div>
+            <div class="crucible-orbit-1"></div>
+            <div class="crucible-orbit-2"></div>
+            
+            <div class="mixer-bottle-anchor slot1">
+              <img src="media/althair.png" alt="Layer 1" class="mixer-anchor-img" id="mixer-img-slot-1">
+              <span style="font-size: 0.65rem; color: var(--gold-light); margin-top: 4px;" id="mixer-lbl-slot-1">Althair</span>
+            </div>
+
+            <div class="mixer-central-blend" id="mixer-blend-crucible">
+              <span class="blend-title" id="blend-output-name">Althair Rose</span>
+              <span class="blend-tag" id="blend-output-profile">Spicy Oriental</span>
+            </div>
+
+            <div class="mixer-bottle-anchor slot2">
+              <img src="media/rose_shahi.png" alt="Layer 2" class="mixer-anchor-img" id="mixer-img-slot-2">
+              <span style="font-size: 0.65rem; color: var(--gold-light); margin-top: 4px;" id="mixer-lbl-slot-2">Rose Shahi</span>
+            </div>
+          </div>
+
+          <!-- Mixer Description Card -->
+          <div class="mixer-output-card glass-panel active" id="mixer-details-card">
+            <div class="mixer-output-header">
+              <h4 class="mixer-output-title" id="mixer-result-title">Royal Rosewood</h4>
+              <span class="mixer-output-tag" id="mixer-result-tag">Rich Woody Floral</span>
+            </div>
+            <p class="mixer-notes-desc" id="mixer-result-desc">An outstanding luxury combination. The bold woody agarwood base of Althair blends flawlessly with the blooming Damask rose of Rose Shahi to create a sweet, warm, spicy floral aura.</p>
+            <div class="mixer-notes-list">
+              <div class="mixer-note-pill">
+                <div class="mixer-note-pill-label">Top Note</div>
+                <div class="mixer-note-pill-val" id="mixer-val-top">Spicy Cardamom</div>
+              </div>
+              <div class="mixer-note-pill">
+                <div class="mixer-note-pill-label">Heart Note</div>
+                <div class="mixer-note-pill-val" id="mixer-val-heart">Taif Rose</div>
+              </div>
+              <div class="mixer-note-pill">
+                <div class="mixer-note-pill-label">Base Note</div>
+                <div class="mixer-note-pill-val" id="mixer-val-base">Deep Oud & Amber</div>
+              </div>
+            </div>
+            <button class="btn-gold" style="width: 100%; text-align: center;" id="mixer-buy-duo-btn">Order Layering Duo (Save 10%)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section id="story">
+    <div class="max-width-wrapper">
+      <div class="story-wrapper">
+        <div class="story-visuals">
+          <div class="story-box-deco">
+            <!-- Simulated image using dark gradient and gold details -->
+            <img src="media/logo.jpg" alt="Hashmi Perfumes Heritage" class="story-box-img">
+            <div class="story-box-badge">
+              <span class="story-badge-number">100%</span>
+              <span class="story-badge-label">Pure Attar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-text">
+          <span class="gold-text" style="font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase;">Our Heritage & Craft</span>
+          <h2 class="gold-gradient-text" style="font-size: 2.2rem; margin: 0.5rem 0 1.5rem; line-height: 1.2;">Formulated from Tradition,<br>Nurtured for Elegance</h2>
+          <p class="story-paragraph">At Hashmi Perfumes, we preserve the ancient art of Indian perfumery. Our attars (Itra) are distilled using traditional methods, utilizing only natural ingredients like precious woods, flowers, roots, and spices. We firmly believe that a true attar represents an intimate connection between nature and the soul.</p>
+          <p class="story-paragraph">Every single bottle is 100% alcohol-free, concentrated, and hand-filled in Patencheru, Telangana. Each drop provides a rich fragrance journey that evolves on your skin, projecting warmth and clean energy for up to 24 hours.</p>
+
+          <div class="story-features">
+            <div class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <h4 class="story-feature-title">0% Alcohol</h4>
+                <p class="story-feature-desc">Concentrated perfume oils that do not dry the skin or evaporate quickly.</p>
+              </div>
+            </div>
+            <div class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <h4 class="story-feature-title">Long Lasting</h4>
+                <p class="story-feature-desc">Single swipe lasts throughout the day and stays on fabric through washes.</p>
+              </div>
+            </div>
+            <div class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <h4 class="story-feature-title">Tradition Crafted</h4>
+                <p class="story-feature-desc">Passed down formulations ensuring true royal scents worn as luxury.</p>
+              </div>
+            </div>
+            <div class="story-feature-item">
+              <div class="story-feature-icon">✦</div>
+              <div>
+                <h4 class="story-feature-title">Made In India</h4>
+                <p class="story-feature-desc">Crafted locally with authentic ingredients celebrating Indian heritage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Footer Section -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <!-- Col 1: Brand Info -->
+      <div>
+        <a href="#" class="footer-about-logo">
+          <svg class="footer-about-logo-img" viewBox="0 0 160 160" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M80 15C55 15 35 32 30 55L35 60L40 55C44 37 60 25 80 25C100 25 116 37 120 55L125 60L130 55C125 32 105 15 80 15Z" fill="#c5a059"/>
+            <path d="M80 8L84 15H76L80 8Z" fill="#c5a059"/>
+            <path d="M72 50H88V53H72V50Z" fill="#c5a059"/>
+            <path d="M70 56H90L87 75H73L70 56Z" fill="#c5a059"/>
+            <path d="M68 85H92L95 125C95 130 90 135 80 135C70 135 65 130 65 125L68 85Z" fill="#c5a059"/>
+          </svg>
+          <div class="logo-text-wrapper">
+            <span class="logo-title" style="font-size: 1.1rem;">HASHMI</span>
+            <span class="logo-subtitle" style="font-size: 0.55rem;">PERFUMES</span>
+          </div>
+        </a>
+        <p class="footer-about-desc">A collection of the finest attars crafted from tradition, worn as luxury. Bringing you timeless scent trails from Patencheru, Telangana.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Facebook">FB</a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">IG</a>
+          <a href="https://wa.me/919701411272" class="footer-social-link" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div style="padding-left: 2rem;">
+        <h4 class="footer-column-title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#scent-quiz">Scent Quiz</a></li>
+          <li><a href="#mixer">Attar Alchemist</a></li>
+          <li><a href="#story">Our Story</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Address & Phone details from Packaging -->
+      <div>
+        <h4 class="footer-column-title">Our Boutique</h4>
+        <div class="footer-contact-details">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <div class="footer-contact-text">
+              <strong>Address:</strong><br>
+              Hashmi Perfumes, Near Axis Bank,<br>
+              Mohammadia Masjid, Patencheru,<br>
+              Telangana - 502319, India
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <div class="footer-contact-text">
+              <strong>Phone Numbers:</strong><br>
+              +91 9701411272<br>
+              +91 9392961775
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉️</div>
+            <div class="footer-contact-text">
+              <strong>Email:</strong><br>
+              mdashiq6786@gmail.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Hashmi Perfumes. All rights reserved. Crafted with luxury.</div>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer Drawer -->
+  <div class="cart-drawer-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Your Cart</h3>
+      <button class="cart-drawer-close" id="cart-close-btn">&times;</button>
+    </div>
+    
+    <div class="cart-drawer-content" id="cart-items-wrapper">
+      <!-- Dynamically filled with JS -->
+      <div class="cart-empty-message">
+        <div class="cart-empty-icon">🛒</div>
+        <h4 class="cart-empty-title">Your Cart is Empty</h4>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">Explore the collections to add luxury attars.</p>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">Subtotal</span>
+        <span class="cart-total-value" id="cart-total-sum">₹0</span>
+      </div>
+      <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; margin-bottom: 0.2rem;">
+        🛒 Checkout redirects to WhatsApp to finalize your luxury delivery details.
+      </p>
+      <button class="btn-gold cart-checkout-btn" id="cart-checkout-btn">
+        <span class="cart-checkout-btn-icon">💬</span> Order Via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Product Detail Quick View Modal -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-content-wrapper glass-panel">
+      <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+      <div class="modal-body" id="modal-content-body">
+        <!-- Dynamically filled with JS -->
+        <div class="modal-gallery">
+          <img src="media/althair.png" alt="Althair" class="modal-main-img">
+        </div>
+        <div class="modal-details">
+          <span class="modal-perfume-tag">Warm Oud & Spices</span>
+          <h3 class="modal-perfume-title">Althair</h3>
+          <div class="modal-perfume-price">₹1,499</div>
+          <p class="modal-perfume-desc">A premium oriental blend featuring cinnamon, cardamom, luxury saffron, Cambodian agarwood (Oud), and sweet dark amber.</p>
+          
+          <div class="modal-perfume-notes-grid">
+            <div class="modal-note-box">
+              <span class="modal-note-label">Top Note</span>
+              <span class="modal-note-value">Cardamom</span>
+            </div>
+            <div class="modal-note-box">
+              <span class="modal-note-label">Heart Note</span>
+              <span class="modal-note-value">Saffron</span>
+            </div>
+            <div class="modal-note-box">
+              <span class="modal-note-label">Base Note</span>
+              <span class="modal-note-value">Cambodian Oud</span>
+            </div>
+          </div>
+
+          <div class="modal-perfume-specs">
+            <div class="modal-spec-row">
+              <span class="modal-spec-name">Volume:</span>
+              <span class="modal-spec-val">6ml Concentrated Oil</span>
+            </div>
+            <div class="modal-spec-row">
+              <span class="modal-spec-name">Formulation:</span>
+              <span class="modal-spec-val">100% Alcohol-free, Non-toxic</span>
+            </div>
+            <div class="modal-spec-row">
+              <span class="modal-spec-name">Longevity:</span>
+              <span class="modal-spec-val">Up to 24 Hours on skin</span>
+            </div>
+          </div>
+
+          <div class="modal-action-row">
+            <button class="btn-gold" style="flex-grow: 1;">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-wrapper"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
